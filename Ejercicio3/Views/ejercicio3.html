@@ -1,0 +1,13 @@
+<h3>Ejercicio 3</h3>
+
+<div style="margin-bottom: 20px;">
+    <input type="file" id="file">
+    <button type="button" ng-click="openFile()">Cargar tabla</button>
+</div>
+
+<table ng-table="tableParams">
+    <tr ng-repeat="user in users">
+        <td data-title="'Name'">{{user.name}}</td>
+        <td data-title="'Age'">{{user.age}}</td>
+    </tr>
+</table>
