@@ -1,0 +1,9 @@
+<h3>Ejercicio 1</h3>
+
+<button ng-click="defaultName()">Nombre por defecto</button>
+
+<button ng-click="userName()">Tu nombre</button>
+<input type="text" ng-show="mostrarInput" ng-model="usuario" placeholder="Escribe tu nombre..."/>
+
+<br>
+<p ng-if="usuario">Hola {{usuario}}</p>
